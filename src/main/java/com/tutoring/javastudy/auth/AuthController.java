@@ -22,18 +22,11 @@ public class AuthController {
         return "signup";
     }
 
-    /*@PostMapping("/signup")
+    @PostMapping("/signup")
     public ResponseEntity<User> signUp(UserDto userDto) {
         System.out.println("sign up store");
         System.out.println(userDto.toString());
         return ResponseEntity.ok(userService.signup(userDto));
-    }*/
-
-    @PostMapping("/signup")
-    public String signUp(UserDto userDto) {
-        System.out.println("sign up store");
-        System.out.println(userDto.toString());
-        return "signup";
     }
 
 }

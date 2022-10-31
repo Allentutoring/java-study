@@ -25,7 +25,7 @@ public class UserService {
         User user = User.builder()
                 .username(userDto.getName())
                 .password(userDto.getPassword())
-                .nickname(userDto.getNickName())
+                .nickname(userDto.getNickname())
                 .activated(true)
                 .build();
 

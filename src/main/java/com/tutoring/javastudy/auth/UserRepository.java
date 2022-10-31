@@ -7,7 +7,6 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @EntityGraph(attributePaths = "authorities")// 쿼리가 수행될 때 Eager 조회함
     Optional<User> findOneWithAuthoritiesByUsername(String username);
 
 }
